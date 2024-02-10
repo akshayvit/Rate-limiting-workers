@@ -22,7 +22,9 @@ func worker2(id int , jobs<-chan int,results chan<-int) {
     }
 }
 
-func main() {
+
+
+func mainWorker() {
    const jobsn=5
    jobs:=make(chan int,jobsn)
    results:=make(chan int,jobsn)
